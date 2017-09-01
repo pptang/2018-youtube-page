@@ -1,0 +1,123 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('img/tokyo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar {
+ display: flex;
+ justify-content: flex-end;
+ padding: 30px 50px;
+ position: relative;
+ z-index: 2;
+}
+
+.navbar > ul {
+  list-style-type: none;
+}
+
+.navbar__item {
+  display: inline-block;
+  padding: 3px 15px;
+  border-radius: 4px;
+}
+
+.navbar__item:hover {
+  background-color: rgba(196, 0, 1, 1);
+}
+
+.navbar__item > a {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-decoration: none;
+}
+.top__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.top__subtitle {
+  align-self: flex-start;
+  padding-left: 75px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.top__title-text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16vw;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(196, 0, 1, 1);
+}
+
+.introduction__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: rgba(240, 240, 240, 1);
+  padding-top: 30px;
+}
+
+.enroll {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 250px 708px 0 708px;
+  border-color: rgba(196, 0, 1, 1) transparent transparent transparent;
+}
+
+.enroll__button {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -125px;
+  width: 100px;
+  color: rgba(240, 240, 240, 1);
+  border: solid 1px rgba(240, 240, 240, 1);
+  letter-spacing: 2px;
+  padding: 3px;
+}
+
+.enroll__button:hover {
+  background-color: rgba(180, 180, 180, 1);
+  cursor: pointer;
+}
